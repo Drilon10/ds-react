@@ -15,6 +15,7 @@ return(
                 autoplayTimeout={5}
                 activeDotColor='#22D4FF'
                 loop={true}
+                showsButtons={true}
             >
                 <View style={styles.item}>
                     <Image
