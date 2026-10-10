@@ -1,0 +1,28 @@
+{
+    "popularProducts": [
+        {
+            "id": 1,
+            "name": "iPad 8",
+            "price": "$880",
+            "category": "Tablet",
+            "image": "https://unsplash.com/photos/three-tablets-stacked-on-a-white-surface-8m5fv2W0O3M",
+            "description": "iPad 8, Memory: 256GB, RAM: 8GB, Silver"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 18 Pro",
+            "price": "$1280",
+            "category": "Phone",
+            "image": "https://unsplash.com/photos/burgundy-smartphone-held-over-lake-GrmCo0gJTxE",
+            "description": "iPhone 18 Pro, Memory: 256GB, RAM: 8GB, Burgundy"
+        },
+        {
+            "id": 3,
+            "name": "iPhone 17 Pro",
+            "price": "$1080",
+            "category": "Phone",
+            "image": "https://unsplash.com/photos/rose-gold-smartphone-resting-on-a-dark-blue-surface-RRKIzrI1ZcY",
+            "description": "iPhone 17 Pro, Memory: 256GB, RAM: 8GB, Orange"
+        }
+    ]
+}
