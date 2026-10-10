@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet, View, Button, Pressable, Image } from 'react-native'
 import Swiper from 'react-native-swiper';
+import Icon from '../components/Icons';
 
 export default function Home({ navigation }) {
     const openAboutTab = () => {
@@ -41,6 +42,12 @@ return(
             </Swiper>
         </View>
 
+        <View style={styles.iconsContainer}>
+            <Icon name="cellphone" iconText="iPhone"></Icon>
+            <Icon name="android" iconText="Samsung"></Icon>
+            <Icon name="laptop" iconText="Laptop"></Icon>
+        </View>
+
         {/* <Text style={styles.emoji}>🏠</Text>
         <Text style={styles.title}>Home Screen</Text>
         <Text style={styles.description}>Welcome to the Home Screen</Text>
@@ -64,7 +71,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: 'center',
         padding: 24,
-        backgroundColor: "#f8fafc"
+        backgroundColor: "#f8fafc",
+        paddingBottom: 100
     },
     sliderContainer: {
         width: "100%",
@@ -115,5 +123,12 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold'
+    },
+    iconsContainer: {
+        width: '90%',
+        alignSelf: 'center',
+        marginTop: 30,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     }
 })
