@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
 
-  viewMoreButton: {
+  viewMoreBtn: {
     width: "90%",
     alignSelf: "center",
     backgroundColor: "#22C9F3",
