@@ -2,9 +2,12 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Home from '../screens/Home';
 import About from '../screens/About';
+import Ios from "../screens/Ios";
 
 const HomeStack = createNativeStackNavigator();
 const AboutStack = createNativeStackNavigator();
+const IosStack = createNativeStackNavigator();
+
 
 const screenOptions = {
     headerStyle: {
@@ -42,5 +45,19 @@ export function AboutStackNavigator() {
                 }}
             ></AboutStack.Screen>
         </AboutStack.Navigator>
+    )
+}
+
+export function IosStackNavigator() {
+        return(
+        <IosStack.Navigator screenOptions={screenOptions}>
+            <IosStack.Screen
+                name="IosProducts"
+                component={Ios}
+                options={{
+                    title: 'iOS'
+                }}
+            ></IosStack.Screen>
+        </IosStack.Navigator>
     )
 }

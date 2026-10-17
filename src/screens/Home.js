@@ -51,7 +51,14 @@ export default function Home({ navigation }) {
             </View>
 
             <View style={styles.iconsContainer}>
-                <Icon name="cellphone" iconText="iPhone"></Icon>
+                <Pressable 
+                    onPress={() => navigation.navigate("Ios")}
+                    accessibilityRole='button'
+                    accessibilityLabel='Go to iOS products'
+                >
+                    <Icon name="cellphone" iconText="iPhone"></Icon>
+                </Pressable>
+                
                 <Icon name="android" iconText="Samsung"></Icon>
                 <Icon name="laptop" iconText="Laptop"></Icon>
             </View>

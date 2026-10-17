@@ -32,5 +32,39 @@
             "image": "https://images.unsplash.com/photo-1790603833088-b98000dbb4c6?w=400&fit=max&q=80&fm=jpg",
             "description": "iPhone 18 Pro, Memory: 256GB, RAM: 8GB, Burgundy"
         }
+    ],
+    "ios": [
+        {
+            "id": 1,
+            "name": "iPad 8",
+            "price": "$880",
+            "category": "Tablet",
+            "image": "https://images.unsplash.com/photo-1775288487309-35c588890167?w=400&fit=max&q=80&fm=jpg",
+            "description": "iPad 8, Memory: 256GB, RAM: 8GB, Silver"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 18 Pro",
+            "price": "$1280",
+            "category": "Phone",
+            "image": "https://images.unsplash.com/photo-1790603833088-b98000dbb4c6?w=400&fit=max&q=80&fm=jpg",
+            "description": "iPhone 18 Pro, Memory: 256GB, RAM: 8GB, Burgundy"
+        },
+        {
+            "id": 3,
+            "name": "iPhone 17 Pro",
+            "price": "$1080",
+            "category": "Phone",
+            "image": "https://images.unsplash.com/photo-1764746250417-2cc103a45a56?w=400&fit=max&q=80&fm=jpg",
+            "description": "iPhone 17 Pro, Memory: 256GB, RAM: 8GB, Orange"
+        },
+        {
+            "id": 4,
+            "name": "iPhone 18 Pro Max",
+            "price": "$1280",
+            "category": "Phone",
+            "image": "https://images.unsplash.com/photo-1790603833088-b98000dbb4c6?w=400&fit=max&q=80&fm=jpg",
+            "description": "iPhone 18 Pro, Memory: 256GB, RAM: 8GB, Burgundy"
+        }
     ]
 }
