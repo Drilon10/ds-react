@@ -4,7 +4,8 @@ import { Ionicons } from "@expo/vector-icons";
 import {
     HomeStackNavigator,
     AboutStackNavigator,
-    IosStackNavigator
+    IosStackNavigator,
+    AndroidStackNavigator
 } from './StackNavigator';
 
 const Tab = createBottomTabNavigator();
@@ -46,6 +47,12 @@ export default function TabNavigator() {
                         : 'phone-portrait-outline'
                     }
 
+                    else if (route.name === "Android") {
+                        iconName = focused
+                        ? "logo-android"
+                        : 'logo-android'
+                    }
+
                     return (
                         <Ionicons
                             name={iconName}
@@ -79,6 +86,14 @@ export default function TabNavigator() {
                 component={IosStackNavigator}
                 options={{
                     tabBarLabel: "iOS"
+                }}
+            ></Tab.Screen>
+
+            <Tab.Screen
+                name="AndroidProducts"
+                component={AndroidStackNavigator}
+                options={{
+                    tabBarLabel: "Android"
                 }}
             ></Tab.Screen>
 

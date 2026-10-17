@@ -58,8 +58,14 @@ export default function Home({ navigation }) {
                 >
                     <Icon name="cellphone" iconText="iPhone"></Icon>
                 </Pressable>
+                <Pressable 
+                    onPress={() => navigation.navigate("android")}
+                    accessibilityRole='button'
+                    accessibilityLabel='Go to Android products'
+                >
+                    <Icon name="android" iconText="Samsung"></Icon>
+                </Pressable>
                 
-                <Icon name="android" iconText="Samsung"></Icon>
                 <Icon name="laptop" iconText="Laptop"></Icon>
             </View>
 
