@@ -4,11 +4,13 @@ import Home from '../screens/Home';
 import About from '../screens/About';
 import Ios from "../screens/Ios";
 import Android from "../screens/Android";
+import Single from "../screens/Single";
 
 const HomeStack = createNativeStackNavigator();
 const AboutStack = createNativeStackNavigator();
 const IosStack = createNativeStackNavigator();
 const AndroidStack = createNativeStackNavigator();
+const SingleStack = createNativeStackNavigator();
 
 
 const screenOptions = {
@@ -75,5 +77,19 @@ export function AndroidStackNavigator() {
                 }}
             ></AndroidStack.Screen>
         </AndroidStack.Navigator>
+    )
+}
+
+export function SingleStackNavigator () {
+    return(
+        <SingleStack.Navigator screenOptions={screenOptions}>
+            <SingleStack.Screen
+                name="Single"
+                component={Single}
+                options={({ route }) => ({
+                    title: route.params?.item?.name ?? "Product Details"
+                })}
+            ></SingleStack.Screen>
+        </SingleStack.Navigator>
     )
 }

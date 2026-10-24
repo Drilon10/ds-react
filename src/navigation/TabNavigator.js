@@ -5,7 +5,8 @@ import {
     HomeStackNavigator,
     AboutStackNavigator,
     IosStackNavigator,
-    AndroidStackNavigator
+    AndroidStackNavigator,
+    SingleStackNavigator
 } from './StackNavigator';
 
 const Tab = createBottomTabNavigator();

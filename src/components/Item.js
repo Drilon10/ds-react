@@ -1,8 +1,16 @@
-import { Text, StyleSheet, Image, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { Text, StyleSheet, Image, View, Pressable } from 'react-native';
 
 export default function Item({item}) {
+
+  const navigation = useNavigation();
+
+  const openDetails = () => {
+    navigation.navigate("Single", { item });
+  }
+
   return(
-    <View style={styles.cardContainer}>
+    <Pressable style={styles.cardContainer} onPress={openDetails} accessibilityRole='button' accessibilityLabel={`View details for ${item.name}`}>
         <View style={styles.imgContainer}>
             <Image
                 source={{uri: item.image}}
@@ -18,7 +26,7 @@ export default function Item({item}) {
             <Text style={styles.price}>{item.price}</Text>
         </View>
 
-    </View>
+    </Pressable>
   )
 }
 
