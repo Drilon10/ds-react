@@ -10,7 +10,6 @@ const HomeStack = createNativeStackNavigator();
 const AboutStack = createNativeStackNavigator();
 const IosStack = createNativeStackNavigator();
 const AndroidStack = createNativeStackNavigator();
-const SingleStack = createNativeStackNavigator();
 
 
 const screenOptions = {
@@ -33,6 +32,13 @@ export function HomeStackNavigator() {
                 options={{
                     title: 'Home'
                 }}
+            ></HomeStack.Screen>
+            <HomeStack.Screen
+                name="Single"
+                component={Single}
+                options={({ route }) => ({
+                    title: route.params?.item?.name ?? "Product Details"
+                })}
             ></HomeStack.Screen>
         </HomeStack.Navigator>
     )
@@ -62,6 +68,13 @@ export function IosStackNavigator() {
                     title: 'iOS'
                 }}
             ></IosStack.Screen>
+            <IosStack.Screen
+                name="Single"
+                component={Single}
+                options={({ route }) => ({
+                    title: route.params?.item?.name ?? "Product Details"
+                })}
+            ></IosStack.Screen>
         </IosStack.Navigator>
     )
 }
@@ -76,20 +89,13 @@ export function AndroidStackNavigator() {
                     title: 'Android'
                 }}
             ></AndroidStack.Screen>
-        </AndroidStack.Navigator>
-    )
-}
-
-export function SingleStackNavigator () {
-    return(
-        <SingleStack.Navigator screenOptions={screenOptions}>
-            <SingleStack.Screen
+            <AndroidStack.Screen
                 name="Single"
                 component={Single}
                 options={({ route }) => ({
                     title: route.params?.item?.name ?? "Product Details"
                 })}
-            ></SingleStack.Screen>
-        </SingleStack.Navigator>
+            ></AndroidStack.Screen>
+        </AndroidStack.Navigator>
     )
 }
